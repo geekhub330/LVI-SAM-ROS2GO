@@ -1,39 +1,18 @@
 # LVI-SAM
 
-This repository contains code for a lidar-visual-inertial odometry and mapping system, which combines the advantages of [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/a246c960e3fca52b989abf888c8cf1fae25b7c25) and [Vins-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) at a system level.
-
-<p align='center'>
-    <img src="./doc/demo.gif" alt="drawing" width="800"/>
-</p>
-
+Modifiled for ROS2GO system
 ---
 
 ## Dependency
 
-- [ROS](http://wiki.ros.org/ROS/Installation) (Tested with kinetic and melodic)
-- [gtsam](https://gtsam.org/get_started/) (Georgia Tech Smoothing and Mapping library)
-  ```
-  sudo add-apt-repository ppa:borglab/gtsam-release-4.0
-  sudo apt install libgtsam-dev libgtsam-unstable-dev
-  ```
-- [Ceres](https://github.com/ceres-solver/ceres-solver/releases) (C++ library for modeling and solving large, complicated optimization problems)
-  ```
-  sudo apt-get install -y libgoogle-glog-dev
-  sudo apt-get install -y libatlas-base-dev
-  wget -O ~/Downloads/ceres.zip https://github.com/ceres-solver/ceres-solver/archive/1.14.0.zip
-  cd ~/Downloads/ && unzip ceres.zip -d ~/Downloads/
-  cd ~/Downloads/ceres-solver-1.14.0
-  mkdir ceres-bin && cd ceres-bin
+
+- [gtsam-4.0.3]
+  git clone -b 4.0.3 https://github.com/borglab/gtsam.git
+  cd gtsam
+  mkdir build & cd build
   cmake ..
-  sudo make install -j4
+  sudo make install
   ```
-
-### Getting start with Docker  
-
-When you use Docker, you could solve the dependency at once.  
-For more information, you can check [docker_start.md](./docker/docker_start.md).    
-
----
 
 ## Compile
 
