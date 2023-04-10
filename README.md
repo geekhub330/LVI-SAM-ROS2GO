@@ -21,7 +21,7 @@ You can use the following commands to download and compile the package.
 
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/TixiaoShan/LVI-SAM.git
+git clone https://github.com/geekhub330/LVI-SAM-ROS2GO
 cd ..
 catkin_make
 ```
@@ -69,40 +69,10 @@ roslaunch lvi_sam run.launch
 rosbag play handheld.bag 
 ```
 
----
 
-## Related Packages
 
-  - [LVI_SAM_fixed by epicjung](https://github.com/epicjung/LVI_SAM_fixed)
-  - [LVI-SAM-modified by skyrim835](https://github.com/skyrim835/LVI-SAM-modified)
-  - [LVI-SAM-Easyused by Cc19245](https://github.com/Cc19245/LVI-SAM-Easyused)
 
----
 
-## TODO
 
-  - [ ] Update graph optimization using all three factors in imuPreintegration.cpp, simplify mapOptimization.cpp, increase system stability 
 
----
 
-## Paper 
-
-Thank you for citing our [paper](./doc/paper.pdf) if you use any of this code or datasets.
-
-```
-@inproceedings{lvisam2021shan,
-  title={LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping},
-  author={Shan, Tixiao and Englot, Brendan and Ratti, Carlo and Rus Daniela},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
-  pages={5692-5698},
-  year={2021},
-  organization={IEEE}
-}
-```
-
----
-
-## Acknowledgement
-
-  - The visual-inertial odometry module is adapted from [Vins-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
-  - The lidar-inertial odometry module is adapted from [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/a246c960e3fca52b989abf888c8cf1fae25b7c25).
